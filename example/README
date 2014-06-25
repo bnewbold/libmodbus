@@ -1,0 +1,15 @@
+First build and install the actual library in the parent directory:
+    
+    cd ..
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+
+Then build and run this program:
+
+    ./make.sh
+    ./example
+
+If you get an "error while loading shared libraries" you probably need to add
+/usr/local/lib to your operating system's shared library search path.
