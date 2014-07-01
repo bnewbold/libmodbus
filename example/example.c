@@ -17,6 +17,7 @@ int main() {
 
     modbus_set_slave(mb, 2);
     modbus_connect(mb);
+    modbus_flush(mb);
 
     // http://libmodbus.org/docs/v3.1.1/modbus_read_registers.html
     rc = modbus_read_registers(mb, 0, 20, tab_reg);
